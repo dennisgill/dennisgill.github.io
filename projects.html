@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-   beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+</head>
+    
+<body id="about-page">
+<section class="jumbotron">
+
+    <p></p>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <ul class="nav nav-justified">
+        <li id ="blue"><a href="index.html">HOME</a></li>
+        <li><a href="about.html" target="_blank">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="Resume.pdf" target="_blank">RESUME</a></li>
+    </ul>
+    </nav>
+
+
+</section>
+    
+
+    <section class="sectionGrey"> 
+        <h2> <a href="https://dennisgill.us/dennisgill.github.io-web-app/">Web-App</a> for Simpson's Giphy (in progress)</h2> 
+        <p> 
+          Web-app when given a Simpson's keyword, it grabs the input from a user input box and grabs 10 static, non-animated gif images from the GIPHY API and places them on the page. If the user tries to search without providing any keyword, the app will alert the user until a keyword is provided.
+        </p>      
+    </section>
+    
+    <section class="sectionGrey"> 
+        <h2>Game Server for Multiplater Game</h2>
+            
+        <p>
+            I programmed the game server using python that can receive username and password from the command line ( telnet to the server) and from within the multiplayer game. Then, it sends the JSON object with username and password fields to the web-server once the users tries to log into the game. If the users enters the valid username and password and has previously signed up at the game web-page, the web-server sends a positive acknowledgement back to the game server. If the user enters invalid info or is not signed up, then the web-server responds with an error. After a game is finished or the user quits the multiplayer game, the game server sends a JSON object to the web-server with the username and result (win) keys to notify the web server about the results of the game. Furthermore, to handle multiple games with multiple players, multithreading was employed to handle multiple connections.
+
+       </p>     
+       
+    
+    </section>
+    
+
+</body>
+</html>
